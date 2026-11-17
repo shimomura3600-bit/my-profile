@@ -1,0 +1,133 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: #19304f;
+  background: #f3f8fc;
+  line-height: 1.7;
+}
+
+header,
+main,
+footer {
+  width: min(100% - 32px, 960px);
+  margin: auto;
+}
+
+header,
+footer {
+  padding: 24px 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0 0 16px;
+}
+
+section,
+article {
+  margin: 24px 0;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.profile-card__img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+nav ul {
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #155a82;
+}
+
+button,
+input {
+  font: inherit;
+  padding: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: wait;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+li button {
+  margin-left: 12px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 3px solid #d87222;
+  outline-offset: 3px;
+}
+
+#result {
+  margin-top: 24px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.cards article {
+  margin: 0;
+  min-width: 0;
+}
+
+.cta-section {
+  background-image: url("images/hero.svg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 32px;
+  background: #19304f;
+  color: white;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: background .2s;
+}
+
+.btn:hover {
+  background: #2b7089;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
